@@ -1,0 +1,30 @@
+#include<iostream>
+
+using namespace std;
+
+double SOMA;
+
+void funcao();
+
+int main() {
+
+	funcao();
+
+return 0;
+}
+
+	void funcao() {
+
+    	double a, b, c;
+
+cout<< "Digite 3 números para serem somados: ";
+
+cin>> a >> b >> c;
+
+SOMA = a + b + c;
+
+cout<< "Os números digitados foram: " << a << ", " << b << " e " << c << endl;
+
+cout<< "A soma dos números digitados: " << SOMA << endl;
+
+}
