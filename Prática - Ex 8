@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    int x1, x2, n1, n2, n3, delta, aux, aux2;
+    
+    cout<< "Digite 3 números inteiros para serem calculados através da fórmula de Bhaskara." << endl;
+    cout<< "Lembre que: A = primeiro número digitado B = segundo C = terceiro." << endl;
+    cin>> n1 >> n2 >> n3;
+    
+    delta = n2 * n2;
+    delta = delta - 4 * n1 * n3;
+    
+        if (delta < 0) {
+        cout<< "Não possui raízes pois o delta é negativo." << endl;
+    }
+    
+        if (delta > 0) {
+        
+        aux = -n2 + delta/2;
+        x1 = aux / 2 * n1;
+        
+        aux2 = -n2 - delta/2;
+        x2 = aux2 / 2 * n1;
+        
+        cout<< "As raízes são: " << endl;
+        cout<< "x' = " << x1 << endl;
+        cout<< "x'' = " << x2 << endl;
+        
+    }
+    
+        if (delta == 0) {
+        cout<< "As raízes são as mesma por delta ser igual à zero: " << endl;
+        cout<< "Raíz = " << x1 << endl;
+    }
+
+    return 0;
+}
+
+
+
