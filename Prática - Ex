@@ -1,0 +1,24 @@
+#include<iostream>
+
+using namespace std;
+
+int NUMEROS;
+
+void funcao();
+
+int main() {
+
+		funcao();
+
+return 0;
+}
+
+void funcao() {
+
+    	for(NUMEROS = 1; NUMEROS <= 100; ++NUMEROS) {
+
+		cout<< NUMEROS << endl;
+
+		}
+}
+
