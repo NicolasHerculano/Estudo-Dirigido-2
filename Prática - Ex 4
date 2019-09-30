@@ -1,0 +1,50 @@
+#include<iostream>
+
+using namespace std;
+
+double valor;
+
+double CONVERTE_MOEDA = 0;
+
+void conversao();
+
+void conversao2();
+
+int main() {
+
+	string escolha;
+
+cout<< "Escolha entre Dólar ou Euro para a conversão" << endl;
+cin>> escolha;
+
+    	if (escolha == "dolar") {
+	conversao();
+}
+
+    	if (escolha == "euro") {
+	conversao2();
+}
+
+return 0;
+}
+
+	void conversao() {
+
+cout<< "Digite um valor em reais que será transformada em dolares" << endl;
+cin>> valor;
+
+CONVERTE_MOEDA = valor * 4.17;
+
+cout<< "Em reais: " << valor << endl << "Em dolares: " << CONVERTE_MOEDA << endl;
+}
+
+	void conversao2() {
+
+ 	cout<< "Digite um valor em reais que será transformada em euros" << endl;
+cin>> valor;
+
+CONVERTE_MOEDA = valor * 4.60;
+
+cout<< "Em reais: " << valor << endl << "Em euros: " << CONVERTE_MOEDA << endl;
+}
+ 
